@@ -210,7 +210,7 @@ h2.main-title-1 {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 /* END ABOUT BUSINESS */
@@ -257,7 +257,7 @@ section.team ul li p {
 /*  List navigation (Portfolio) */
 section ul.nav-button {
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 section ul.nav-button li button {
@@ -290,17 +290,13 @@ section ul.nav-button li button:hover {
 
 /* MAIN CONTENT (Portfolio) */
 
-
-section ul.prodjects li {
+section ul.prodjects li.li-pr {
     margin-right: 30px;
-    margin-bottom: 30px;
-
+    margin-top: 30px;
 }
 
 section ul.prodjects {
     display: block;
-    margin-left: 215px;
-
 }
 
 section ul.prodjects li div {
@@ -338,11 +334,6 @@ footer {
     border: 1px solid var(--border-block-color);
 }
 
-footer p {
-    display: block;
-
-}
-
 footer p.f-logotype {
     margin-top: 60px;
 }
@@ -374,7 +365,6 @@ footer address p.address {
 }
 
 footer address p.f-contacts {
-    margin-top: 0px;
     margin-bottom: 9px;
 }
 
