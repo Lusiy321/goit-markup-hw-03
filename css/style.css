@@ -11,7 +11,6 @@
 
 body {
     margin: auto;
-    width: 1600px;
     font-family: 'Roboto', Arial, sans-serif;
     border: 1px solid var(--border-block-color);
     color: var(--main-text-color);
@@ -33,6 +32,10 @@ p {
     margin: 0;
 }
 
+img {
+    display: block;
+}
+
 ul {
     display: flex;
     justify-content: space-between;
@@ -46,7 +49,8 @@ li {
 
 .container {
     width: 1200px;
-    margin-left: 215px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section {
@@ -61,6 +65,7 @@ header {
 
 header div.container {
     display: flex;
+
 }
 
 header div.logo a {
@@ -82,11 +87,9 @@ header div.logo a span {
 
 header ul {
     margin-top: 32px;
+    gap: 50px;
 }
 
-header ul li {
-    margin-right: 50px;
-}
 
 header nav ul li a {
     color: var(--main-text-color);
@@ -97,9 +100,11 @@ header nav ul li a {
     text-decoration: none;
 }
 
-header div.contacts ul {
-    margin-left: 250px;
+header div.contacts {
+    margin-left: auto;
 }
+
+header div.contacts ul {}
 
 header div.contacts ul li a {
     color: var(--contacts-color);
@@ -137,10 +142,8 @@ section.main-screen {
 
 section.main-screen h1 {
     color: var(--main-bg-color);
-    padding-top: 200px;
-    padding-left: 452px;
-    padding-right: 452px;
-    padding-bottom: 30px;
+    margin-top: 106px;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -216,8 +219,13 @@ h2.main-title-1 {
 /* END ABOUT BUSINESS */
 
 /* TEAM BLOCK (INDEX) */
+
 section.team {
     background-color: var(--second-bg-color);
+}
+
+section.team div.boxes-team {
+    padding: 30px;
 }
 
 h2.main-title-2 {
@@ -231,6 +239,8 @@ h2.main-title-2 {
 
 section.team ul li {
     background-color: var(--main-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 section.team ul li h3 {
@@ -239,7 +249,6 @@ section.team ul li h3 {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 30px;
     padding-bottom: 10px;
 }
 
@@ -249,7 +258,6 @@ section.team ul li p {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 30px;
 }
 
 /* END TEAM BLOCK */
@@ -257,7 +265,7 @@ section.team ul li p {
 /*  List navigation (Portfolio) */
 section ul.nav-button {
     justify-content: center;
-    padding-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 section ul.nav-button li button {
@@ -289,20 +297,15 @@ section ul.nav-button li button:hover {
 /* END List navigation (Portfolio) */
 
 /* MAIN CONTENT (Portfolio) */
-
-section ul.prodjects li.li-pr {
-    margin-right: 30px;
-    margin-top: 30px;
-}
-
 section ul.prodjects {
-    display: block;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-section ul.prodjects li div {
-    border-left: 1px solid var(--border-block-color);
-    border-right: 1px solid var(--border-block-color);
-    border-bottom: 1px solid var(--border-block-color);
+section ul.prodjects li div.boxes {
+    padding: 20px 24px;
+    border: 1px solid var(--border-block-color);
+    border-top: none;
 }
 
 section ul.prodjects li h3 {
@@ -310,9 +313,7 @@ section ul.prodjects li h3 {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: -4px;
-    padding-top: 20px;
-    padding-left: 24px;
+
 }
 
 section ul.prodjects li p {
@@ -320,8 +321,7 @@ section ul.prodjects li p {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--contacts-color);
-    padding-left: 24px;
-    padding-bottom: 20px;
+
 }
 
 /* END MAIN CONTENT (Portfolio) */
@@ -330,12 +330,11 @@ section ul.prodjects li p {
 
 footer {
     background-color: var(--content-bg-color);
-    height: 252px;
     border: 1px solid var(--border-block-color);
 }
 
-footer p.f-logotype {
-    margin-top: 60px;
+footer div.footer {
+    padding: 60px 0;
 }
 
 footer p.f-logotype a.f-logo {
